@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+head{
+     color:brown;
+     font-size:2em;
+
+}
+body{
+     color:tomato;
+}
+footer{
+     color:brown;
+     font-size:1.5em;
+}
+body{
+     background-color: coral;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     box-sizing: border-box;
+}
+#box{
+     background-color: coral;
+     margin:25px 10px;
+     border: 2px pink solid ;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Email Template</title>
+</head>
+<body>
+     <div id="box">
+          <p id="head"  th:text="'Hi, ' + ${name}"></p>
+          <p id="body"  th:text="${message}"></p>
+          <p id="foot" th:text="${footer}"></p>
+     </div>
+   
+</body>
+</html>
